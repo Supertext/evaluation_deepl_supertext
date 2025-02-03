@@ -1,1 +1,1 @@
-# evaluation_deepl_supertext
+# A/B test DeepL vs Supertext

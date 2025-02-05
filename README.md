@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-# A/B test DeepL vs Supertext
-=======
 # A/B Test Supertext vs DeepL
 
 We release all evaluation data and scripts for further analysis and reproduction of the accompanying paper: [A comparison of translation performance between DeepL and Supertext](https://arxiv.org/abs/2502.02577).
@@ -43,4 +40,3 @@ If you use our code or data, please cite our [paper](https://arxiv.org/abs/2502.
         primaryClass={cs.CL},
         url={https://arxiv.org/abs/2502.02577}, 
     }
->>>>>>> Stashed changes

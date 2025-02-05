@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "analysis"
+version = "0.1.0"
+description = ""
+authors = ["Supertext"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+polars = "^1.21.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.5"
+pre-commit = "^3.7.1"
+pytest-clarity = "^1.0.1"
+pytest = "^8.1.1"
+
+
+[tool.poetry.group.pytest.dependencies]
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+indent-width = 4
+
+[tool.ruff.lint]
+# Like isort, sort imports and detect missing required imports.
+select = ["E", "F", "I001", "I002"]
+ignore = ["E501"]
+# HARD MODE: use as a test to activate a wide range of sensible rules
+# select = ["E", "F", "I001", "I002", "ARG", "ANN", "PLR", "RUF", "C", "B"]
+preview = true
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[tool.ruff.lint.isort]
+# Like isort, use 2 lines after imports
+lines-after-imports = 2

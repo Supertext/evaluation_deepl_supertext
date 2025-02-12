@@ -14,7 +14,7 @@ poetry install
 To evaluate A/B results, call the script as follows:
 
 ```bash
-    python analysis/analyze.py -i data/ab_LANGPAIR.csv
+poetry run python analysis/analyze.py -i data/ab_LANGPAIR.csv
 ```
 
 You will find two TSVs with results in the `results` folder:
@@ -27,13 +27,8 @@ You will find two TSVs with results in the `results` folder:
 If you use our code or data, please cite our [paper](https://arxiv.org/abs/2502.02577):
 
     @misc{flueckiger-etal-2025-comparison,
-        title = "A comparison of translation performance between DeepL and Supertext",
-        author = {Flückiger, Alex  and
-        Amrhein, Chantal  and
-        Graf, Tim and
-        Schläpfer, Philippe and
-        Schottmann, Florian  and
-        Läubli, Samuel},
+        title={A comparison of translation performance between DeepL and Supertext}, 
+        author={Alex Flückiger and Chantal Amrhein and Tim Graf and Frédéric Odermatt and Martin Pömsl and Philippe Schläpfer and Florian Schottmann and Samuel Läubli},
         year={2025},
         eprint={2502.02577},
         archivePrefix={arXiv},

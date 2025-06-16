@@ -1,8 +1,7 @@
 # A/B Test Supertext vs DeepL
 
 We release all evaluation data and scripts for further analysis and reproduction of the accompanying paper: [A comparison of translation performance between DeepL and Supertext](https://arxiv.org/abs/2502.02577).
-
-The dataset is available on Hugging Face as well: https://huggingface.co/datasets/Supertext/mt-doclevel-ab-test
+The dataset is [available on Hugging Face](https://huggingface.co/datasets/Supertext/mt-doclevel-ab-test) as well.
 
 
 ### Installation
